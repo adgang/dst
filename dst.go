@@ -664,6 +664,8 @@ type File struct {
 	Decs       FileDecorations
 }
 
+func (f *File) Decorations() *NodeDecs { return nil }
+
 // A Package node represents a set of source files
 // collectively building a Go package.
 //
